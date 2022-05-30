@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+![image](https://i.imgur.com/OWl6yUV.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# fuze.stream
 
-## Available Scripts
+fuze.stream is a next-generation, fully decentralised social video platform that is owned and governed by its content creators and users.
 
-In the project directory, you can run:
+## Story
 
-### `npm start`
+It is without a question that the meteoric rise of the web3 paradigm has sparked a lot of excitement due to the large amount of potential it holds. However, for it to be truly mass-adopted, projects must be made that can be used by everyone - and benefit them without the need for users to understand the technical side of things. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+At the moment, the most popular web3 powered applications revolve around assets, like NFT or DeFi related projects. While these creations are at the forefront of web3 develpoment, there seems to be a lot of repitition, and a lack of innovation and use cases.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Furthermore, due to the freshness of web3 and its reputation of being complex and risky, the average user may be discouraged from using creations powered by it. This is reinforced by the fact that there is no real world example of how it can be beneficial to a users life. 
 
-### `npm test`
+It's safe to say that everyday people wont change the services they use unless there is a blunt example of how their life can be improved by using something else.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Therefore, it's about time something is made that gives web3 a friendly face while offering truly beneficial features.**
 
-### `npm run build`
+## Project Outline
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Broadly speaking, fuze.stream is a decentralised social video platform which encourages and rewards content creation and interaction, without undermining the hard work of its users. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Every piece of content, from a whole video to a simple comment, will be minted as a non-fungible token on the blockchain. The content statistics *e.g, views, likes, comments etc...*  will be gathered and stored within the tokens metadata. As a result, content is transformed into assets which can be bought, sold and collected just like any other non-fungible token. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As well as this, users will be paid in fuze tokens proportionately to the performance of their content. The more popular their content, the more tokens they receive. Fuze tokens can be sold and cashed out, or be used to gift other creators.
 
-### `npm run eject`
+In a nutshell, this means:
+1. Viral and popular content can be sold on the open market, rewarding users for contributing to the site. *Please note, the content creator will always remain the same no matter how many times content has been transacted.*
+2. Any type of user is eligible for monitization regardless of their account size. This is opposed to YouTube where only certain channels can be monitized.
+3. Users are given an incentive to create and interact with content.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Moderation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Moderation is a vital element of any social media platform. In an era where misinformation and explicit content is at an all time high, it is cruicial that negative and illegal content must be removed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Usually this isn't an issue as all big social media platforms have moderation teams, but what is the case for decentralised ones? How can reliable moderation be achieved without a central power?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Fuze will contain a moderation program. It allows specific users - that meet a target of followers - to enroll as a content moderator.
 
-## Learn More
+Content moderators are shown pieces of text that have been flagged by an explicit content detection algorithm. They are simply prompted to decide whether the given content could cause offence by either pressing 'Yes' or 'No'.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To rule out any bias or rouge moderation, the same prompt is broadcasted to a large amount of users. When a certain amount of responses are received, they are averaged and deemed overall safe or unsafe. Unsafe content gets deleted, and the creator gets flagged. If a creator is flagged a certain amount of times they will be banned.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Conclusion
 
-### Code Splitting
+This was just a broad top level explanation of what fuze.stream is and aspires to be. As development continues a whitepaper will be created, breaking down the components of the project and explaining how they work to a detailed degree.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for reading!
