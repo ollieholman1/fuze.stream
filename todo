@@ -1,0 +1,31 @@
+TODO List:
+
+Design constraints:
+Video title max 80 chars
+
+Design:
+-- Navigation
+1) Hide the side nav bar on mobile devices and increase the video width to 100% (for fitting purposes)
+2) Add the nav bar hamburger to the top of the sidebar, not the navbar
+   - fixes the fixed scrolling issue where the hamburger icon stays attached to top
+3) On mobile devices, show side nav on top of content instead of pushing to the side
+   - prevents unwanted results when content is pushed off to the right
+4) replace the search bar with a search icon on the main nav bar
+
+-- General
+1) dark mode
+
+-- Left Video Pane
+1) add collapsable description underneath views/video actions
+2) custom video gui
+
+-- Right Video Pane
+1) add channel infomation at the top
+   - profile pic, name, followers, subscribe, support (tip) 
+2) add comments on the bottom (with ability to post comment first)
+
+-- Recommendation
+1) create placeholder cards that run underneath video panes
+2) different rows for different content types
+
+

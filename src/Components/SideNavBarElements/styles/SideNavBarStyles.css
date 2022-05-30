@@ -1,0 +1,17 @@
+.side-nav {
+  height: 100%;
+  position: fixed;
+  transition: .2s width ease-in-out;
+}
+
+.collapsed {
+  width: var(--side-nav-bar-collapsed-width);
+}
+
+.expanded {
+  width: var(--side-nav-bar-expanded-width)
+}
+
+.collapsed > .side-nav-element > .side-nav-element-text {
+  display: none;
+}

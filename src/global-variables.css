@@ -1,0 +1,12 @@
+:root {
+  /* Shared */
+  --content-padding: 10px;
+
+  /* Video Page */
+  --video-max-width: 1280px;
+  --video-side-bar-width: 400px;
+
+  /* Side Nav */
+  --side-nav-bar-collapsed-width: 60px;
+  --side-nav-bar-expanded-width: 180px;
+}

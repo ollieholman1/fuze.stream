@@ -1,0 +1,19 @@
+.side-nav-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 65px;
+  gap: 10px;
+}
+
+.side-nav-element:hover {
+  cursor: pointer;
+}
+
+.side-nav-element:not(.selected):hover {
+  background: rgba(0, 0, 0, 0.05)
+}
+
+.selected {
+  background: rgba(0, 0, 0, 0.10);
+}
