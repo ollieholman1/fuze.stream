@@ -14,7 +14,7 @@ function resize_video() {
 
 // Keeps video side bar aligned with video height
 function resize_comments() {
-  var channel_box = $('.channel-box');
+  var channel_box = $('.video-creator-details-wrapper');
   var video = $('video');
   var comment_box = $('.comment-box');
 

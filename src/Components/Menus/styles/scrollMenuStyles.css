@@ -1,0 +1,45 @@
+.scroll-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1700px;
+}
+
+.scroll-menu-wrapper > .scroll-menu-button {
+    padding: 5px
+}
+
+.scroll-menu-wrapper > .scroll-menu-button > button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: none;
+    font-size: 13px;
+    border-radius: 50%;
+    color: #666;
+    transition: .2s all ease-in-out;
+}
+
+.scroll-menu-wrapper > .scroll-menu-button > button:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.scroll-menu-wrapper > .scroll-menu-content {
+    display:  flex;
+    overflow: scroll;
+    gap: 10px;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.scroll-menu-wrapper > .scroll-menu-content::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-menu-wrapper > .scroll-menu-content > div {
+    display: inline-block;
+    /* width: 400px; */
+}
+

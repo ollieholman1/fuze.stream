@@ -127,36 +127,36 @@
   padding-right: var(--content-padding);
 }
 
-.video-side-bar-wrapper > .channel-box {
+.video-side-bar-wrapper > .video-creator-details-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.video-side-bar-wrapper > .channel-box > .channel-details {
+.video-side-bar-wrapper > .video-creator-details-wrapper > .video-creator-details {
   font-family: Roboto;
   font-weight: 400;
   font-size: 15px;
 }
 
-.video-side-bar-wrapper > .channel-box > .channel-details > span {
+.video-side-bar-wrapper > .video-creator-details-wrapper > .video-creator-details > span {
   display: block;
   /* color: #333; */
 }
 
-.channel-details > .channel-followers {
+.video-creator-details > .creator-followers {
   font-size: 11px;
   padding-top: 5px;
   color: #666;
 }
 
-.video-side-bar-wrapper > .channel-box > .channel-actions {
+.video-side-bar-wrapper > .video-creator-details-wrapper > .video-creator-actions {
   display: flex;
   gap: 10px;
   margin-left: auto;
 }
 
-.channel-actions > .channel-follow-button {
+.video-creator-actions > .creator-follow-button {
   background: none;
   background: red;
   color: white;
@@ -167,7 +167,7 @@
   font-size: 14px;
 }
 
-.channel-actions > .channel-support-button {
+.video-creator-actions > .creator-support-button {
   background: none;
   background: none;
   color: black;
@@ -183,8 +183,13 @@
   margin-top: 10px;
   border: 1px solid rgba( 0, 0, 0, 0.1);
   height: 500px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
+
+.video-side-bar-wrapper > .comment-box::-webkit-scrollbar {
+  display: none;
+}
+
 
 .comment-box > .comment-box-header {
   font-family: Roboto;
@@ -194,7 +199,47 @@
 
 .comment-box > .comment-box-comments {
   background: rgba(0, 0, 0, 0.02);
+  height: calc(100% - 110px);
+  overflow: scroll;
 }
+
+.comment-box > .comment-box-comments::-webkit-scrollbar {
+  display: none;
+}
+
+.post-comment {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 10px;
+  box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.05);
+}
+
+.post-comment > .hi {
+ /* background: green; */
+ flex: 1;
+}
+
+.post-comment > .hi > input {
+ width: 250px;
+ font-family: Roboto;
+
+ height:40px;
+ margin-left: 10px;
+ background: none;
+ border: none;
+ /* border-radius: 5px; */
+ border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+
+.post-comment > .hi > input:focus {
+  border: 0 !important;
+  outline: 0 !important;
+  border-bottom: 2px solid rgb(75, 75, 200) !important;
+ }
+ 
+
 
 .comment-box-comments > .comment {
   display: flex;
@@ -264,7 +309,7 @@
   scroll-behavior: smooth;
 }
 
-.recommendations-wrapper > .recommendation-box {
+/* .recommendations-wrapper > .recommendation-box {
   width: 300px;
   border-radius: 5px;
   flex-shrink: 0;
@@ -313,7 +358,7 @@
 
 .recommendation-box > .recommendation-details > .video-details > .channel-name, .video-views {
   font-size: 12px;
-}
+} */
 
 /* .recommendation-box > .recommendation-details > span {
   display: block;
@@ -372,3 +417,49 @@ h1 {
 .over > div > button:hover {
   transform: scale(1.1);
 }
+
+.menu-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.slider::-webkit-scrollbar {display:none;}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  display: inline-block;
+  margin: 10px;
+}
+
+.menu-button {
+  padding: 10px;
+}
+
+.menu-button > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  transition: .3s all;
+color: #777;
+ }
+
+ .menu-button > button:hover {
+   transform: scale(1.1);
+   background: rgba(0,0,0,0.05);
+   cursor: pointer;
+ }
