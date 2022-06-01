@@ -20,12 +20,9 @@ Design:
 2) custom video gui
 
 -- Right Video Pane
-1) add channel infomation at the top
-   - profile pic, name, followers, subscribe, support (tip) 
-2) add comments on the bottom (with ability to post comment first)
+1) add a min-height constraint on the comments when in mobile mode
 
 -- Recommendation
-1) create placeholder cards that run underneath video panes
-2) different rows for different content types
+1) reduce width of recommendation cards as the screen gets smaller
 
 

@@ -1,0 +1,5 @@
+.video-side-bar-wrapper {
+    width: var(--video-side-bar-width);
+    padding-right: var(--content-padding);
+    flex-shrink: 0;
+}

@@ -1,13 +1,18 @@
 .recommendation-box {
-    width: 300px;
+    width: 250px;
+    display:block;
+    margin: auto;
     border-radius: 5px;
     flex-shrink: 0;
     white-space: unset;
+    margin-top: 20px;
 }
 
 .recommendation-box > .recommendation-thumbnail > img {
+    height: 150px;
     width: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .recommendation-box > .recommendation-video-details {

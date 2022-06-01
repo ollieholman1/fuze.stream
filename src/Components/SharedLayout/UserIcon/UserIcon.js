@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './styles/UserProfileIconStyles.css';
+import './styles.css';
 
-import user_icon from '../../Assets/User/user-profile-icon-placeholder.png';
+import user_icon from './user-profile-icon-placeholder.png';
 
 const UserIcon = (props) => {
   return (

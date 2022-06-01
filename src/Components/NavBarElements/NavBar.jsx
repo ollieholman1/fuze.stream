@@ -5,7 +5,7 @@ import NavBarLogo from './NavBarLogo.jsx';
 import NavBarQuickAction from './NavBarQuickAction.jsx';
 import NavBarHamburger from './NavBarHamburger.jsx';
 
-import UserIcon from '../User/UserProfileIcon.jsx';
+import UserIcon from '../SharedLayout/UserIcon/UserIcon.js';
 import SearchBar from '../Search/SearchBar.jsx';
 
 import './styles/NavBarStyles.css';
@@ -14,15 +14,19 @@ const NavBar = (props) => {
   const [notificationIcon, setNotificationIcon] = useState('fa-light');
   const [bounceOnHover, setBounceOnHover] = useState("");
 
-  const {sideNavCollapsedState, setSideNavCollapsedState} = props.sideNavCollapseData;
+  function toggleSideNavState() {
+    const {sideNavState, setSideNavState} = props.sideNavStateData;
+
+    setSideNavState(sideNavState == 0 ? 1 : 0);
+  }
 
   return (
-    <div className="nav-bar-container">
-      <NavBarElement extraClasses="">
-        <NavBarHamburger onClick={() => setSideNavCollapsedState(sideNavCollapsedState == 'collapsed' ? 'expanded' : 'collapsed')}/>
+    <div className="nav-bar-container" style={{marginLeft: '00px'}}>
+      <NavBarElement extraClasses="fixed-element">
+        <NavBarHamburger onClick={() => toggleSideNavState()}/>
       </NavBarElement>
 
-      <NavBarElement extraClasses="logo-container">
+      <NavBarElement extraClasses="logo-container fixed-element">
         <NavBarLogo />
       </NavBarElement>
 

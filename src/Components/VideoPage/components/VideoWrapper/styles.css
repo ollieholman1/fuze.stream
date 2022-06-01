@@ -1,0 +1,5 @@
+.video-wrapper {
+    flex: 1;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+}

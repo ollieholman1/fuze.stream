@@ -26,3 +26,12 @@
   gap: 30px;
 }
 
+.fixed-element {
+  height: 60px;
+  align-items: center;
+}
+
+
+.fixed-element > div {
+  position: fixed;
+}

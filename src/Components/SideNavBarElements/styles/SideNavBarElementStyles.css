@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.side-nav-element:not(.selected):hover {
+.side-nav-element:not(.override-hover) + .side-nav-element:not(.selected):hover {
   background: rgba(0, 0, 0, 0.05)
 }
 

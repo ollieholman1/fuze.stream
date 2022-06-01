@@ -1,19 +1,18 @@
 import React from "react";
 import { useRef } from "react";
 
-import UserIcon from "../User/UserProfileIcon";
+import UserIcon from '../../SharedLayout/UserIcon/UserIcon';
 
-import './styles/videoRecommendationCardStyles.css';
+import './styles.css';
 
 const VideoRecommendationCard = (props) => {
     return (
         <>
-    
         <div className="recommendation-box">
             <div className="recommendation-thumbnail">
                 <img 
                     alt="Video Recommendation"
-                    src="https://image-placeholder.com/images/actual-size/1920x1080.png"
+                    src={props.src}
                 />
             </div>
             <div className="recommendation-video-details">

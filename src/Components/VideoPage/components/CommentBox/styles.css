@@ -1,0 +1,58 @@
+.comment-box {
+    margin-top: 10px;
+    border: 1px solid rgba( 0, 0, 0, 0.1);
+    height: 500px;
+    /* overflow: scroll; */
+  }
+  
+  .comment-box::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .comment-box > .comment-box-header {
+    font-family: Roboto;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .comment-box > .comment-box-comments {
+    background: rgba(0, 0, 0, 0.02);
+    height: calc(100% - 110px);
+    overflow: scroll;
+  }
+  
+  .comment-box > .comment-box-comments::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .post-comment {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.05);
+  }
+  
+  .post-comment > .post-comment-input-container {
+   flex: 1;
+  }
+  
+  .post-comment > .post-comment-input-container > input {
+   width: 250px;
+   font-family: Roboto;
+  
+   height:40px;
+   margin-left: 10px;
+   background: none;
+   border: none;
+   /* border-radius: 5px; */
+   border-bottom: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  
+  .post-comment > .post-comment-input-container > input:focus {
+    border: 0 !important;
+    outline: 0 !important;
+    border-bottom: 2px solid rgb(75, 75, 200) !important;
+   }

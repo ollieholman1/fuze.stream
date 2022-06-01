@@ -1,0 +1,44 @@
+.comment {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: Roboto;
+    padding: 10px;
+  }
+  
+.comment > .comment-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+  
+  .comment-content > .comment-author {
+    font-weight: 200;
+    font-size: 12px;
+  }
+  
+  .comment-content > .comment-text {
+    padding-top: 7px;
+    line-height: 17px;
+  }
+  
+  .comment-content > .comment-actions { 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .comment-content > .comment-actions > div {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+  }
+  
+  .comment-content > .comment-actions > div > span {
+    font-size: 12px
+  }
+  
+  .comment-content > .comment-actions > .reply {
+    margin-left: auto;
+  }

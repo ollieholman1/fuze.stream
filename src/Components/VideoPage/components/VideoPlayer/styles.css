@@ -1,0 +1,7 @@
+.video > video {
+    /* Height of video is calculated in JS. It is constrained to 16:9 aspect ratio */
+    width: 100%;
+    max-width: var(--video-max-width);
+    object-fit: cover;
+    border-radius: 5px;
+}
