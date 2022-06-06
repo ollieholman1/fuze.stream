@@ -1,6 +1,6 @@
 @media (max-width: 915px) {
     .flex-wrapper {
-      flex-direction: column;
+      flex-direction: column !important;
     }
   
     .video > .video-information > .video-title {
@@ -18,6 +18,10 @@
     .video-side-bar-wrapper {
       padding: var(--content-padding) 0 0 var(--content-padding);
       width: unset !important; /* Makes side bar box fill width on small devices */
+    }
+
+    .video-side-bar-wrapper > .comment-box {
+      min-height: 400px;
     }
   
     /* .recommendations-wrapper {

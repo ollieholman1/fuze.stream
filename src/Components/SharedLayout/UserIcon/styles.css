@@ -11,6 +11,11 @@
     height: 100%;
     border-radius: 50%;
   }
+
+  .extra-small-icon {
+    width: 30px;
+    height: 30px;
+  }
   
   .small-icon {
     width: 40px;

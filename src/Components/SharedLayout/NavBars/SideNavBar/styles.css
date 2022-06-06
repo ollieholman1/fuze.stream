@@ -1,0 +1,24 @@
+.side-nav {
+    height: 100%;
+    position: fixed;
+    transition: .2s width ease-in-out;
+    z-index: 1;
+    left: 0;
+    background: white;
+    /* box-shadow:10px 2px 4px rgba(0, 0, 0, 0.03); */
+    transition: .5s all;
+  }
+  
+  .collapsed {
+    width: var(--side-nav-bar-collapsed-width);
+    
+  }
+  
+  .expanded {
+    width: var(--side-nav-bar-expanded-width);
+    box-shadow:10px 2px 4px rgba(0, 0, 0, 0.03);
+  }
+  
+  .collapsed > .side-nav-element > .side-nav-element-text {
+    display: none;
+  }

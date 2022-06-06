@@ -1,0 +1,25 @@
+.search-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-bar > input {
+    height: 40px;
+    border: 0 !important;
+    outline: 0 !important;
+    padding-left: 15px;
+    font-size: 14px;
+    background: transparent;
+    width: 100%;
+  }
+  
+  .search-bar > .search-bar-icon {
+    margin-left: auto;
+    width: 50px;
+    text-align: center;
+  }
+  

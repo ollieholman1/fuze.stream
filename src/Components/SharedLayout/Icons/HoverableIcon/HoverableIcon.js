@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
 
+import './styles.css';
+
+
+// Font awesome icon which changes state on hover
+// ---
+
+
 const HoverableIcon = (props) => {
     const [iconType, setIconType] = useState(props.baseType);
   
@@ -13,6 +20,7 @@ const HoverableIcon = (props) => {
   
     return (
       <i 
+        style={{fontSize: props.fontSize}}
         className={iconClass}
         onMouseOver={() => alternateType()}
         onMouseLeave={() => alternateType()}

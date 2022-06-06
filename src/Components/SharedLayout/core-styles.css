@@ -1,0 +1,6 @@
+/* Core common styles that aren't component specific */
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
