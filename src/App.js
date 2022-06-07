@@ -10,6 +10,12 @@ import VideoScreen from './Components/VideoPage/VideoScreen.js';
 import './Components/SharedLayout/core-styles.css';
 import './Components/SharedLayout/css-variables.css';
 
+import './test.css';
+import UserIcon from './Components/SharedLayout/UserIcon/UserIcon';
+import VideoCreatorDetails from './Components/VideoPage/components/VideoCreatorDetails/VideoCreatorDetails';
+import StaticIcon from './Components/SharedLayout/Icons/StaticIcon/StartIcon';
+
+import HomeScreen from './Components/HomePage/HomeScreen';
 
 const App = () => {
   // 0 = closed, 1 = open
@@ -20,9 +26,17 @@ const App = () => {
       <TopNavBar sideNavStateData={{sideNavState, setSideNavState}}/>
       <SideNavBar sideNavState={sideNavState}/>
       
+{/*   Video Page
       <Container>
         <PageContent>
           <VideoScreen />        
+        </PageContent>
+      </Container> */}
+
+      <Container>
+        <PageContent>
+          {/* <VideoScreen />         */}
+          <HomeScreen />
         </PageContent>
       </Container>
     </>

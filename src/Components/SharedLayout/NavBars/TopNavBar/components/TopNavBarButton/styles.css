@@ -1,0 +1,28 @@
+.account-button-container {
+    margin-right: 10px;
+}
+
+.top-nav-bar-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    color: black;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.sign-up {
+    border: 1px solid black;
+    margin-left: 5px; /* button spacing */
+}
+
+.log-in {
+    border: none;
+}
+
+.top-nav-bar-button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}

@@ -12,15 +12,52 @@ import HoverableIcon from '../../Icons/HoverableIcon/HoverableIcon.js';
 import StaticIcon from '../../Icons/StaticIcon/StartIcon.js';
 
 import './styles.css';
+import TopNavBarAccountButtons from './components/TopNavBarButton/TopNavBarAccountButtons.js';
 
 
 // Top navigation bar included on every page
 // ---
 
 
+const TopNavBarRightContents = (props) => {
+  if (props.loggedIn) {
+    const [bounceOnHover, setBounceOnHover] = useState("");
+
+    return (
+      <>
+      <TopNavBarAction actionClass="coin-action">
+          <div 
+          onMouseOver={() => setBounceOnHover('fa-bounce')}
+          onMouseLeave={() => setBounceOnHover('')} 
+            >
+            1.2K <i className={"fa-solid fa-coin " + bounceOnHover}></i>
+          </div>
+        </TopNavBarAction>
+
+        <TopNavBarAction actionClass="notification-action">
+            <div className="notification-icon-container">
+                <HoverableIcon icon="fa-bells" baseType="fa-light" fontSize="17px"/>
+            </div>
+        </TopNavBarAction>
+
+        <TopNavBarAction actionClass="user-profile-action">
+          <UserIcon iconSize="extra-small"/>
+          <div className="user-profile-expand-icon">
+            <StaticIcon icon="fa-light fa-chevron-down" />
+          </div>
+        </TopNavBarAction>
+      </>
+    )
+  } else {
+    return (
+      <TopNavBarAccountButtons/>
+    )
+  }
+}
+
+
 const TopNavBar = (props) => {
-  const [notificationIcon, setNotificationIcon] = useState('fa-light');
-  const [bounceOnHover, setBounceOnHover] = useState("");
+  
 
   function toggleSideNavState() {
     const {sideNavState, setSideNavState} = props.sideNavStateData;
@@ -43,29 +80,7 @@ const TopNavBar = (props) => {
       </TopNavBarElement>
 
       <TopNavBarElement extraClasses="quick-action-container pull-right">
-      
-        <TopNavBarAction actionClass="coin-action">
-          <div 
-          onMouseOver={() => setBounceOnHover('fa-bounce')}
-          onMouseLeave={() => setBounceOnHover('')} 
-            >
-            1.2K <i className={"fa-solid fa-coin " + bounceOnHover}></i>
-          </div>
-        </TopNavBarAction>
-
-        <TopNavBarAction actionClass="notification-action">
-            <div className="notification-icon-container">
-                <HoverableIcon icon="fa-bells" baseType="fa-light" fontSize="17px"/>
-            </div>
-        </TopNavBarAction>
-
-        <TopNavBarAction actionClass="user-profile-action">
-          <UserIcon iconSize="extra-small"/>
-          <div className="user-profile-expand-icon">
-            {/* <i className="fa-light fa-chevron-down"></i> */}
-            <StaticIcon icon="fa-light fa-chevron-down" />
-          </div>
-        </TopNavBarAction>
+        <TopNavBarRightContents loggedIn={false}/>
       </TopNavBarElement>
     </div>
   )

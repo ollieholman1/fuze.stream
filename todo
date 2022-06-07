@@ -3,13 +3,11 @@ TODO List:
 Design constraints:
 Video title max 80 chars
 
+General:
+1) figure out how to use global contexts to pass variables such as user_logged_in, etc.
+
 Design:
 -- Navigation
-1) Hide the side nav bar on mobile devices and increase the video width to 100% (for fitting purposes)
-2) Add the nav bar hamburger to the top of the sidebar, not the navbar
-   - fixes the fixed scrolling issue where the hamburger icon stays attached to top
-3) On mobile devices, show side nav on top of content instead of pushing to the side
-   - prevents unwanted results when content is pushed off to the right
 4) replace the search bar with a search icon on the main nav bar
 
 -- General
@@ -18,11 +16,5 @@ Design:
 -- Left Video Pane
 1) add collapsable description underneath views/video actions
 2) custom video gui
-
--- Right Video Pane
-1) add a min-height constraint on the comments when in mobile mode
-
--- Recommendation
-1) reduce width of recommendation cards as the screen gets smaller
 
 

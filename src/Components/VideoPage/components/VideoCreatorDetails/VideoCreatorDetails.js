@@ -7,7 +7,7 @@ const VideoCreatorDetails = () => {
     return (
       <>
         <div className="video-creator-details-wrapper">
-          <UserIcon size="medium" />
+          <UserIcon iconSize="small" />
           <div className="video-creator-details">
             <span className="creator-name">Channel Name</span>
             <span className="creator-followers">1.2K followers</span>
