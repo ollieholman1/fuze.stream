@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.css';
 
-import UserIcon from '../../../SharedLayout/UserIcon/UserIcon';
-import HoverableIcon from '../../../SharedLayout/Icons/HoverableIcon/HoverableIcon';
+import UserIcon from '../../../../Components/SharedLayout/UserIcon/UserIcon';
+import HoverableIcon from '../../../../Components/SharedLayout/Icons/HoverableIcon/HoverableIcon';
 
 const Comment = () => {
     return (

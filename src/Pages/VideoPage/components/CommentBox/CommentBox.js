@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-import UserIcon from '../../../SharedLayout/UserIcon/UserIcon';
+import UserIcon from '../../../../Components/SharedLayout/UserIcon/UserIcon';
 
 const CommentBox = (props) => {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.css';
 
-import HoverableIcon from '../../../SharedLayout/Icons/HoverableIcon/HoverableIcon';
-import StaticIcon from '../../../SharedLayout/Icons/StaticIcon/StartIcon';
+import HoverableIcon from '../../../../Components/SharedLayout/Icons/HoverableIcon/HoverableIcon';
+import StaticIcon from '../../../../Components/SharedLayout/Icons/StaticIcon/StartIcon';
 
 const VideoInformation = () => {
     return (

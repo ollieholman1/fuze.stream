@@ -1,0 +1,131 @@
+.infinite-scroll-container {
+    width: 688px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+
+.video-container {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.large-video {
+    width: 344px;
+    animation: scroll 8s infinite linear;
+}
+
+.small-video {
+    width: 260px;
+    animation: scroll2 5s infinite linear;
+}
+
+.shimmer {
+    animation: shimmer 2.2s infinite linear;
+    background: linear-gradient(to right, #E4E4E4 8%, #E0E0E0 18%, #E4E4E4 33%);
+    background-size: 1200px 100%;
+}
+
+.large-video-placeholder {
+    height: 193px;
+    width: 344px;
+}
+
+.small-video-placeholder {
+    height: 146px;
+    width: 260px;
+}
+
+.video-text-placeholder {
+    margin-top: 10px;
+    height: 15px;
+}
+
+.large-text {
+    width: 250px;
+}
+
+.small-text {
+    width: 180px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-708px);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(-590px);
+    }
+}
+
+/* ---  */
+
+.login-pane {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 1000px; */
+    /* width: 80%; */
+}
+
+.login-content {
+    font-family: Roboto;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.login-content > h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    padding: 5px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.atest {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+}
+
+.bar {
+    height: 1px;
+    background: darkblue;
+    flex: 1;
+    opacity: .6;
+}
+
+.textt {
+    padding: 10px;
+    font-weight: 200;
+    color: darkblue;
+}
+
+

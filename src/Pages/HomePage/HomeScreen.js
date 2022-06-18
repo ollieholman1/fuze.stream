@@ -1,17 +1,17 @@
 import React from "react";
 
-import '../SharedLayout/core-styles.css';
+import '../../Components/SharedLayout/core-styles.css';
 
-import ScrollMenu from "../Menus/ScrollMenu/ScrollMenu";
-import VideoRecommendationCard from "../Cards/VideoRecommendationCard/VideoRecommendationCard";
-import HorizontalSpace from "../SharedLayout/HorizontalSpace/HorizontalSpace";
+import ScrollMenu from "../../Components/Menus/ScrollMenu/ScrollMenu";
+import VideoRecommendationCard from "../../Components/Cards/VideoRecommendationCard/VideoRecommendationCard";
+import HorizontalSpace from "../../Components/SharedLayout/HorizontalSpace/HorizontalSpace";
 
-import TrendingVideoCard from "../Cards/TrendingVideoCard/TrendingVideoCard";
-import DefaultBr from "../SharedLayout/DefaultBr/DefaultBr";
+import TrendingVideoCard from "../../Components/Cards/TrendingVideoCard/TrendingVideoCard";
+import DefaultBr from "../../Components/SharedLayout/DefaultBr/DefaultBr";
 
 import CategoryTitle from "./components/CategoryTitle/CategoryTitle";
-import Container from "../SharedLayout/Container/Container";
-import PageContent from "../SharedLayout/PageContent/PageContent";
+import Container from "../../Components/SharedLayout/Container/Container";
+import PageContent from "../../Components/SharedLayout/PageContent/PageContent";
 
 const HomeScreen = () => {
     return (

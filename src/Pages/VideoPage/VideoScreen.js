@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../SharedLayout/core-styles.css';
+import '../../Components/SharedLayout/core-styles.css';
 
-import FlexWrapper from '../SharedLayout/FlexWrapper/FlexWrapper';
+import FlexWrapper from '../../Components/SharedLayout/FlexWrapper/FlexWrapper';
 import VideoWrapper from './components/VideoWrapper/VideoWrapper';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import VideoInformation from './components/VideoInformation/VideoInformation';
@@ -11,16 +11,16 @@ import VideoCreatorDetails from './components/VideoCreatorDetails/VideoCreatorDe
 import CommentBox from './components/CommentBox/CommentBox';
 import Comment from './components/Comment/Comment';
 
-import HorizontalSpace from '../SharedLayout/HorizontalSpace/HorizontalSpace';
+import HorizontalSpace from '../../Components/SharedLayout/HorizontalSpace/HorizontalSpace';
 
-import ScrollMenu from '../Menus/ScrollMenu/ScrollMenu';
-import VideoRecommendationCard from '../Cards/VideoRecommendationCard/VideoRecommendationCard';
+import ScrollMenu from '../../Components/Menus/ScrollMenu/ScrollMenu';
+import VideoRecommendationCard from '../../Components/Cards/VideoRecommendationCard/VideoRecommendationCard';
 
 import './media-queries.css';
 
 import './scripts/content-resize.js';
-import Container from '../SharedLayout/Container/Container';
-import PageContent from '../SharedLayout/PageContent/PageContent';
+import Container from '../../Components/SharedLayout/Container/Container';
+import PageContent from '../../Components/SharedLayout/PageContent/PageContent';
 
 
 // This is the video screen, containing the video player and oweer, comments, decription and recommendations.
