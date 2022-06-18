@@ -6,7 +6,7 @@ const ScrollMenu = (props) => {
     const ref = useRef(null);
 
     const scroll = (dir) => {
-        var scrollOffset = dir == "left" ? 300 : -300;
+        var scrollOffset = dir === "left" ? 300 : -300;
         ref.current.scrollLeft = ref.current.scrollLeft + scrollOffset;
     }
 

@@ -10,7 +10,7 @@ import './styles.css';
 
 
 const SideNavBar = (props) => {
-  const sideNavState = props.sideNavState == 0 ? 'collapsed' : 'expanded';
+  const sideNavState = props.sideNavState === 0 ? 'collapsed' : 'expanded';
 
   return (
     <div className={"side-nav " + sideNavState}>

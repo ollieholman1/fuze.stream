@@ -13,7 +13,7 @@ const HoverableIcon = (props) => {
     const iconClass = iconType + ' ' + props.icon;
   
     function alternateType() {
-      const nextIconState = iconType == props.baseType ? 'fa-solid' : props.baseType;
+      const nextIconState = iconType === props.baseType ? 'fa-solid' : props.baseType;
   
       setIconType(nextIconState);
     }

@@ -1,0 +1,11 @@
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.top-title-margin {
+    margin-top: 10px;
+}
+

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 
 import TopNavBarElement from './components/TopNavBarSection/TopNavBarSection.js';
 import TopNavBarLogo from './components/TopNavBarLogo/TopNavBarLogo.js';
@@ -62,7 +62,7 @@ const TopNavBar = (props) => {
   function toggleSideNavState() {
     const {sideNavState, setSideNavState} = props.sideNavStateData;
 
-    setSideNavState(sideNavState == 0 ? 1 : 0);
+    setSideNavState(sideNavState === 0 ? 1 : 0);
   }
 
   return (
